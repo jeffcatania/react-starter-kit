@@ -1,0 +1,34 @@
+{
+  "name": "react-starter-kit",
+  "version": "1.0.0",
+  "description": "React, ES6, Webpack",
+  "main": "index.js",
+  "dependencies": {
+    "css-loader": "^0.19.0",
+    "babel-core": "^5.8.25",
+    "file-loader": "^0.8.4",
+    "babel-loader": "^5.3.2",
+    "react": "^0.13.3",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.12.4",
+    "json-loader": "^0.5.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffcatania/react-starter-kit.git"
+  },
+  "author": "Jeff Catania <jeffrey.catania@accenture.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffcatania/react-starter-kit/issues"
+  },
+  "homepage": "https://github.com/jeffcatania/react-starter-kit#readme"
+}
