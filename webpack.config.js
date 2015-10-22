@@ -6,12 +6,12 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './index'
+    './src/index'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
@@ -23,6 +23,7 @@ module.exports = {
       exclude: /node_modules/,
       include: __dirname
     },
+    { test: /\.(html)$/, loader: 'file?name=[name].[ext]'},
     { test: /\.(json)$/, loader: 'json'},
     { test: /\.css/, loader: "style!css"},
     { test: /\.(gif|png|jpg|svg)$/, loader: 'url?name=img/[name].[ext]'}
