@@ -20,12 +20,8 @@ module.exports = {
     extensions: ['','.js','.jsx']
   },
   module: {
-    loaders: [{
-      test: /\.js$/,
-      loaders: ['react-hot', 'babel'],
-      exclude: /node_modules/,
-      include: __dirname
-    },
+    loaders: [
+    { test: /\.jsx$/, loaders: ['react-hot', 'babel'] },
     { test: /\.(html)$/, loader: 'file?name=[name].[ext]'},
     { test: /\.(json)$/, loader: 'json'},
     { test: /\.css/, loader: "style!css"},
