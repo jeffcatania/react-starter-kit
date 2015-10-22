@@ -24,7 +24,9 @@ module.exports = {
     { test: /\.jsx$/, loaders: ['react-hot', 'babel'] },
     { test: /\.(html)$/, loader: 'file?name=[name].[ext]'},
     { test: /\.(json)$/, loader: 'json'},
+    { test: /\.(csv)$/, loader: 'dsv'},
     { test: /\.css/, loader: "style!css"},
+    { test: /\.less/, loader: "style!css!less"},
     { test: /\.(gif|png|jpg|svg)$/, loader: 'url?name=img/[name].[ext]'}
     ]
   }
